@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chase.io</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.0/socket.io.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <section class="lobby">
+      <img id="logo" src="./Mogoma.png"> 
+      <h1>CHASE.IO</h1>
+      <p id="lobby-pseudo">PSEUDO :</p>
+      <div id="main-menu">
+        <div id="start-menu">
+          <button type="button" id="Play">Jouer</button>
+          <button type="button" id="Rules">Règles</button>
+          <button type="button" id="Credits">Crédits</button>
+        </div>
+        <div id="wait-menu">
+          <h2 id="waiting">En attente :</h2>
+          <p>Au moins 3 pour démarrer.</p>
+          <div id="player-list"></div>
+          <button type="button" id="Ready">Prêt : 0/2</button>
+        </div>
+      </div>
+      <h2 id="start-timer"></h2>
+    </section>
+    
+    <script src="laby.js" type="module"></script>
+    <canvas id="game-canvas" width="540" height="280"></canvas>
+    <section class="chat">
+      <h1>Chat</h1>
+      <ul id="messages"></ul>
+      <form id="message-form">
+        <input type="text" placeholder="Message"/>
+        <button>Send</button>
+      </form>
+    </section>
+    <script src="client.js"></script>
+  </body>
+</html>

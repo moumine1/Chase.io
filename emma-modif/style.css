@@ -1,0 +1,257 @@
+@font-face {
+    font-family: Ballpoint;
+    src: url("Ballpoint.ttf") format("truetype");
+}
+
+body{
+    margin: 0;
+    background-color: #FFF6A7;
+}
+
+#game-canvas {
+    border: 3px solid black;
+    position: absolute;
+    height: auto;
+    width: 30%;
+    right: 5px;
+    top: 5px;
+    opacity: 0;
+    background-color: bisque;
+}
+
+.lobby {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+}
+
+.lobby h1 {
+    font-size: 100px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    font-family: Ballpoint;
+}
+
+.lobby #logo {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 150px;
+    height: 150px;
+}
+
+.lobby #lobby-pseudo {
+    font-size: 24px;
+    position: absolute;
+    margin: 0;
+    bottom: 5px;
+    left: 5px;
+    font-weight: bold;
+    font-family: Ballpoint;
+}
+
+.lobby #main-menu {
+    width: 40%;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: rgba(50, 50, 50, 0.7);
+}
+
+.lobby #main-menu #start-menu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.lobby #main-menu #start-menu button {
+    width: 80%;
+    height: 15%;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    border: 3px solid white;
+    border-radius: 10px;
+    background-color: black;
+}
+
+.lobby #main-menu #start-menu button:hover{
+    color: black;
+    border: 3px solid black;
+    background-color: white;
+}
+
+.lobby #main-menu #wait-menu {
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lobby #main-menu #wait-menu h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 0;
+    font-family: Ballpoint;
+    color: white;
+    text-transform: uppercase;
+}
+
+.lobby #main-menu #wait-menu p {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Ballpoint;
+    color: white;
+    text-transform: uppercase;
+}
+
+.lobby #main-menu #wait-menu #player-list {
+    width: 80%;
+    height: 60%;
+    border: 3px solid white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgb(25, 25, 25);
+}
+
+.lobby #main-menu #wait-menu #player-list p{
+    width: 100%;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Ballpoint;
+    color: white;
+    border: 1px solid white;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    background-color: rgba(50, 50, 50, 0.5);
+}
+
+.lobby #main-menu #wait-menu #Ready {
+    display: none;
+    width: 30%;
+    height: 10%;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    border: 3px solid white;
+    border-radius: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: black;
+}
+
+.lobby #main-menu #wait-menu #Ready:hover{
+    color: black;
+    border: 3px solid black;
+    background-color: white;
+}
+
+.lobby #main-menu #rules-menu {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: Ballpoint;
+    
+}
+
+.lobby #main-menu #rules-menu h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.lobby #main-menu #rules-menu p {
+    text-align: justify;
+}
+
+.lobby #main-menu #credit-menu {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: Ballpoint;
+    
+
+}
+
+.lobby #main-menu #credit-menu h2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0%;
+    margin-top: 5%;
+}
+
+.lobby #main-menu #credit-menu h4 {
+    display: flex;
+    justify-content: center;
+}
+
+.lobby #main-menu #credit-menu #image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.lobby #main-menu #credit-menu #image img {
+    width: 70px;
+    margin-bottom: 15px;
+    margin-right: 20px;
+}
+
+.lobby #main-menu #credit-menu #image #moumine {
+    display: flex;
+    flex-direction: row;
+}
+
+.lobby #main-menu #credit-menu #image #hugo {
+    display: flex;
+    flex-direction: row;
+}
+
+.lobby #main-menu #credit-menu #image #emma {
+    display: flex;
+    flex-direction: row;
+}
+
+.chat{
+    border: 1px solid black;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    background-color: rgba(245, 222, 179, 0.526);
+    border-radius: 5px;
+    font-family: Ballpoint;
+}
+
+.chat h1 {
+    margin-left: 10px;
+}
