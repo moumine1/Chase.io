@@ -1,3 +1,9 @@
-/node_modules
-/node_modules/*
-/node_modules/*/*
+node_modules
+node_modules/*
+
+emma-modif
+emma-modif/*
+
+moumine-modif
+moumine-modif/*
+
